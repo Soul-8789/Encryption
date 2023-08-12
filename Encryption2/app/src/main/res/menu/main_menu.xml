@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home_icon"
+            android:title="Home" />
+    </group>
+
+    <item android:title="Encryption">
+
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/piglatin"
+                    android:icon="@drawable/lock_icon"
+                    android:title="Pig Latin" />
+                <item
+                    android:id="@+id/Diffy"
+                    android:icon="@drawable/lock_icon"
+                    android:title="Diffie Hellman" />
+                <item
+                    android:id="@+id/caesare"
+                    android:icon="@drawable/lock_icon"
+                    android:title="Caesar" />
+            </group>
+        </menu>
+    </item>
+
+
+    <item android:title="Decryption">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/piglatind"
+                    android:icon="@drawable/lock_open_icon"
+                    android:title="Pig Latin" />
+                <item
+                    android:id="@+id/Diffyd"
+                    android:icon="@drawable/lock_open_icon"
+                    android:title="Diffie Hellman" />
+                <item
+                    android:id="@+id/caesard"
+                    android:icon="@drawable/lock_open_icon"
+                    android:title="Caesar" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Help">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_about"
+                    android:icon="@drawable/aboutapp_icon"
+                    android:title="About App" />
+            </group>
+
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_credit"
+                    android:icon="@drawable/credit_icon"
+                    android:title="Credit" />
+            </group>
+        </menu>
+    </item>
+</menu>

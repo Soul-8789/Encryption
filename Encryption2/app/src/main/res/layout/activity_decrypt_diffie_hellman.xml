@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:background="@drawable/e1"
+android:padding="16dp"
+tools:context=".decryptDiffieHellman">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="106dp"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginBottom="16dp"
+    android:fontFamily="@font/aclonica"
+    android:text="Diffie-Hellman Key Exchange"
+    android:textAlignment="center"
+    android:textColor="@color/yellow2"
+    android:textSize="34sp"
+    android:textStyle="bold" />
+
+<TextView
+    android:layout_width="380dp"
+    android:layout_height="5dp"
+    android:background="@color/yellow2"/>
+
+<TextView
+    android:layout_width="325dp"
+    android:layout_height="50dp"
+    android:fontFamily="serif-monospace"
+    android:paddingTop="20dp"
+    android:text="Prime Number (q): 23"
+    android:textColor="@color/bluelight"
+    android:textSize="26sp" />
+
+<TextView
+    android:layout_width="325dp"
+    android:layout_height="50dp"
+    android:fontFamily="serif-monospace"
+    android:paddingTop="5dp"
+    android:text="Primitive Root: 9"
+    android:textColor="@color/bluelight"
+    android:textSize="26sp" />
+
+<TextView
+    android:layout_width="380dp"
+    android:layout_height="5dp"
+    android:background="@color/yellow2"/>
+
+<TextView
+    android:id="@+id/textViewPublicKey"
+    android:layout_width="385dp"
+    android:layout_height="87dp"
+    android:layout_marginBottom="16dp"
+    android:fontFamily="@font/aclonica"
+    android:paddingTop="35dp"
+    android:text="Enter Your Private Key"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:textColor="@color/yellow2"
+    android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/pvt_key_d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:hint="Enter Here                 (Value must be less than q)"
+        android:textColor="@color/yellow2"
+        android:textColorHint="@color/yellow2"
+        android:textSize="20sp" />
+
+<TextView
+    android:layout_width="394dp"
+    android:layout_height="32dp" />
+
+<TextView
+    android:layout_width="380dp"
+    android:layout_height="5dp"
+    android:background="@color/yellow2"/>
+
+<TextView
+    android:layout_width="392dp"
+    android:layout_height="66dp"
+    android:fontFamily="@font/aclonica"
+    android:paddingTop="30dp"
+    android:hint="Other Party's Public Key:"
+    android:textColorHint="@color/yellow2"
+    android:textSize="24sp" />
+
+<EditText
+    android:id="@+id/pub_key_d"
+    android:layout_width="388dp"
+    android:layout_height="58dp"
+    android:fontFamily="monospace"
+    android:hint="Enter Here"
+    android:inputType="text"
+    android:minHeight="48dp"
+    android:textColor="@color/yellow2"
+    android:textColorHint="@color/yellow2"
+    android:textSize="20sp" />
+
+<Button
+    android:id="@+id/generate_secret_number"
+    android:layout_width="wrap_content"
+    android:layout_height="68dp"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="16dp"
+    android:backgroundTint="@color/black"
+    android:fontFamily="@font/aclonica"
+    android:onClick="generate"
+    android:text="Generate Secret Number"
+    android:textAlignment="center"
+    android:textColor="@color/yellow2"
+    android:textSize="16sp"
+    app:cornerRadius="20dp" />
+
+    <TextView
+        android:id="@+id/secret_number"
+        android:layout_width="376dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="monospace"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/yellow2"
+        android:textSize="22sp" />
+
+<Button
+    android:layout_width="110dp"
+    android:layout_height="60dp"
+    android:backgroundTint="@color/black"
+    android:onClick="clearField"
+    android:text="Clear"
+    android:textColor="@color/yellow2"
+    app:cornerRadius="20dp"
+    android:layout_marginStart="130dp"/>
+
+</LinearLayout>
